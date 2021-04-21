@@ -31,7 +31,7 @@ class App extends React.Component {
         userRef.onSnapshot(snapShot => {
           this.setState({
             currentUser: {
-              id: userRef.uid,
+              id: userRef.id,
               ...snapShot.data()
             }
           })
