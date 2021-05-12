@@ -8,8 +8,8 @@ import { selectCartItemsCount } from "../../redux/cart/cart.selectors";
 
 const CartIcon = ({ itemCount, toogleCart }) => {
   return (
-    <div className="cart-icon">
-      <ShoppingIcon className="shopping-icon" onClick={toogleCart} />
+    <div className="cart-icon" onClick={toogleCart}>
+      <ShoppingIcon className="shopping-icon" />
       <span className="item-count">{itemCount}</span>
     </div>
   );
